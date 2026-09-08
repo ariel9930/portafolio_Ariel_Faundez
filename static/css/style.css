@@ -2,47 +2,16 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+
 }
+
 
 /*Navbar*/
 .logo img {
     height: 110px;
     border-radius: 50%;
-    box-shadow:
-        0 0 5px #064420,
-        0 0 10px #0d8859,
-        0 0 20px #00ff66,
-        0 0 40px #00ff66,
-        0 0 80px #00ff66,
-        0 0 90px #00ff66;
+    box-shadow: #d4af37 0px 0px 50px
 }
-
-.navbar {
-    display: flex;
-    justify-content: space-around;
-    background-color: rgb(7, 7, 7);
-    align-items: center;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: #f8faf8;
-    font-size: 1.5rem;
-    text-shadow:
-        0 0 5px #fff,
-        0 0 10px #fff,
-        0 0 20px #00ff66,
-        0 0 40px #00ff66,
-        0 0 80px #00ff66,
-        0 0 90px #00ff66;
-        border: solid 2px rgb(151, 221, 151);
-        border-radius: 5px;
-        padding: 10px;
-}
-
-
-/*Navbar*/
 
 
 
@@ -50,6 +19,9 @@
 .arelsentado img {
     height: 400px;
 }
+
+
+
 
 
 /*presentacion*/
