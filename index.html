@@ -13,43 +13,44 @@
 
 <body>
     <header>
-        <nav class="navbar">
+        <nav class="menu-principal">
             <div class="logo">
-                <img src="static/img/ariel.png.png" alt="Ariel Faúndez">
+                <img  src="static/img/ariel.png.png" alt="Ariel Faúndez">
             </div>
-            <a class="links" href="#inicio">Home</a>
-            <a class="links" href="#habilidades">Habilidades</a>
-            <a class="links" href="#proyectos">Proyectos</a>
-            <a class="links" href="#cursos">Cursos</a>
-            <a class="links" href="#educacion">Educación</a>
-            <a class="links" href="#contacto">Contacto</a>
+            <a class="nav-item" href="#inicio">Home</a>
+            <a class="nav-item" href="#habilidades">Habilidades</a>
+            <a class="nav-item" href="#proyectos">Proyectos</a>
+            <a class="nav-item" href="#cursos">Cursos</a>
+            <a class="nav-item" href="#educacion">Educación</a>
+            <a class="nav-item" href="#contacto">Contacto</a>
+            <button id="btn-tema" class="btn-modo">☀️ Modo Claro</button>
         </nav>
     </header>
 
-    <main class="container">
-        <section id="inicio" class="Acerca_de_mi">
-            <div class="soiarel">
+    <main class="wrapper">
+        <section id="inicio" class="hero">
+            <div class="presentacion">
                 <h1>Hola, soy Ariel y te contaré sobre mí.</h1>
                 <p>Soy un aprendiz de programación front-end junior, vivo en Chile, Región Metropolitana.
                     Me gusta la tecnología, aprender cosas nuevas y me encanta crear páginas web.
                 </p>
             </div>
-            <div class="arelsentado">
-                <img src="static/img/aura.png.png" alt="Ariel">
-            </div>
+<div class="foto-perfil">
+    <img id="fotop" src="static/img/aura.png.png" alt="Ariel">
+</div>
         </section>
 
-        <section id="habilidades" class="Habilidades">
+        <section id="habilidades" class="seccion-skills">
             <h1>Habilidades</h1>
-            <div class="mini-habilidades">
-                <div class="Lenguajes">
+            <div class="bloques-skills">
+                <div class="caja-lenguajes">
                     <h1>Lenguajes</h1>
                     <h2>CSS</h2>
                     <h2>JavaScript</h2>
                     <h2>HTML5</h2>
                     <h2>Python</h2>
                 </div>
-                <div class="habilidades">
+                <div class="caja-herramientas">
                     <h1>Habilidades</h1>
                     <h2>Github</h2>
                     <h2>MySQL</h2>
@@ -58,9 +59,9 @@
             </div>
         </section>
 
-        <section id="proyectos" class="proyectos">
+        <section id="proyectos" class="mis-trabajos">
             <h1>Proyectos</h1>
-            <div class="mini-proyectos-junaweb">
+            <div class="tarjeta-proyecto">
                 <h2>Juna Web</h2>
                 <p>El presente proyecto propone el desarrollo e implementación
                     de una plataforma web con integración de hardware destinada
@@ -70,97 +71,100 @@
                     y un innovador punto de control automatizado: un escáner montado
                     en un trípode para controlar el flujo de los estudiantes de forma autónoma.</p>
                 <a href="https://ariel9930.github.io/JunaWeb/" target="_blank" rel="noopener noreferrer"
-                    class="ir_proyecto">Visitar Proyecto</a>
-                <div class="imagen-junaweb">
+                    class="btn-ver">Visitar Proyecto</a>
+                <div class="preview-img">
                     <img src="static/img/junaweb.png" alt="JunaWeb">
                 </div>
             </div>
 
-            <div class="mini-proyectos-taco_palace">
+            <div class="tarjeta-proyecto">
                 <h2>Taco palace</h2>
                 <p>Taco palace es una página web para pedir tu almuerzo mexicano.</p>
                 <a href="https://ariel9930.github.io/Taco_Place_Ariel_Faundez/" target="_blank"
-                    rel="noopener noreferrer" class="ir_proyecto">Visitar Proyecto</a>
-                <div class="imagen-taco_palace">
+                    rel="noopener noreferrer" class="btn-ver">Visitar Proyecto</a>
+                <div class="preview-img">
                     <img src="static/img/tacopalace.png" alt="Tacopalace">
                 </div>
             </div>
         </section>
 
-        <section id="cursos" class="Cursos">
+        <section id="cursos" class="mis-cursos">
             <h1>Cursos</h1>
-            <div class="skillnest">
-                <div class="skillnest-imagen">
+
+            <div class="box-curso">
+                <div class="logo-curso">
                     <img src="static/img/Skillnest_typoblanca-1.png" alt="Skillnest">
                 </div>
-                <div class="curso-info">
-                    <div class="curso-header">
+                <div class="detalle-curso">
+                    <div class="encabezado-curso">
                         <h2>Desarrollo Web (Skillnest)</h2>
                         <span class="porcentaje">67%</span>
                     </div>
-                    <div class="progress-bar-container">
-                        <div class="progress-bar-fill"></div>
+                    <div class="barra-progreso">
+                        <div class="progreso-linea"></div>
                     </div>
                 </div>
             </div>
-        </section>
+<div class="caja-video">
+    <iframe src="https://www.youtube-nocookie.com/embed/HTPfHLYIFFY" allowfullscreen></iframe>
+</div>
 
-        <section id="educacion" class="Educacion">
+        </section>
+        <section id="educacion" class="estudios">
             <h1>Educación</h1>
-            <div class="educacion-grid">
-                <div class="educacion-card">
-                    <div class="educacion-img">
+            <div class="lista-colegios">
+                <div class="colegio-item">
+                    <div class="thumb-colegio">
                         <img src="static/img/images (3).jpg" alt="Escuela Villa La Cultura">
                     </div>
-                    <div class="educacion-contenido">
+                    <div class="info-colegio">
                         <h2>Escuela Villa La Cultura</h2>
-                        <p class="educacion-nivel">Enseñanza Básica</p>
+                        <p class="tipo-estudio">Enseñanza Básica</p>
                     </div>
                 </div>
 
-                <div class="educacion-card">
-                    <div class="educacion-img">
+                <div class="colegio-item">
+                    <div class="thumb-colegio">
                         <img src="static/img/n-vvh.png" alt="Liceo Vate Vicente Huidobro">
                     </div>
-                    <div class="educacion-contenido">
+                    <div class="info-colegio">
                         <h2>Liceo Vate Vicente Huidobro</h2>
-                        <p class="educacion-nivel">Enseñanza Media</p>
+                        <p class="tipo-estudio">Enseñanza Media</p>
                     </div>
                 </div>
             </div>
         </section>
 
-
-        <section id="contacto" class="contacto">
+        <section id="contacto" class="zona-contacto">
             <h1>Contacto</h1>
-            <p class="contacto-subtitulo">¿Tienes un proyecto en mente o quieres conversar? ¡Contáctame!</p>
-            <div class="contacto-grid">
-                <a href="mailto:arielyohunk@gmail.com" class="contacto-card">
-                    <div class="contacto-icon">
+            <p class="subtitulo-contacto">¿Tienes un proyecto en mente o quieres conversar? ¡Contáctame!</p>
+            <div class="redes-contacto">
+                <a href="mailto:arielyohunk@gmail.com" class="opcion-contacto">
+                    <div class="ico-box">
                         <img src="static/img/unnamed.png" alt="Gmail">
                     </div>
-                    <div class="contacto-text">
+                    <div class="texto-contacto">
                         <h3>Correo Electrónico</h3>
                         <p>arielyohunk@gmail.com</p>
                     </div>
                 </a>
 
-                <a href="https://wa.me/56929990163" target="_blank" rel="noopener noreferrer" class="contacto-card">
-                    <div class="contacto-icon">
+                <a href="https://wa.me/56929990163" target="_blank" rel="noopener noreferrer" class="opcion-contacto">
+                    <div class="ico-box">
                         <img src="static/img/icon-1968244_1280.png" alt="Teléfono">
                     </div>
-                    <div class="contacto-text">
+                    <div class="texto-contacto">
                         <h3>Teléfono / WhatsApp</h3>
                         <p>+569 2999 0163</p>
                     </div>
                 </a>
 
                 <a href="https://www.linkedin.com/in/ariel-faundez-hernández-334312435?utm_source=share_via&utm_content=profile&utm_medium=member_android"
-                    target="_blank" rel="noopener noreferrer" class="contacto-card">
-                    <div class="contacto-icon">
+                    target="_blank" rel="noopener noreferrer" class="opcion-contacto">
+                    <div class="ico-box">
                         <img src="static/img/images.png" alt="LinkedIn">
                     </div>
-                    <div class="contacto-text">
+                    <div class="texto-contacto">
                         <h3>LinkedIn</h3>
                         <p>Ver Perfil Profesional</p>
                     </div>
